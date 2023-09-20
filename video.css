@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/wow.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 183, 255);
+}
+nav {
+    background-color:transparent; 
+    padding: 1px;
+    display: none; /* Por defecto, el menú está oculto */
+    margin: 0%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(170, 0, 0, 0.788); /* Rojo vino al pasar el cursor */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mostrar el menú de navegación al pasar el cursor sobre el encabezado */
+header:hover nav {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Menú de navegación en modo responsivo */
+    nav {
+        background-color:transparent; /* Fondo semi-transparente en modo responsivo */
+        display: block;
+        position: static; /* Vuelve a la posición normal */
+    }
+
+    nav ul li {
+        display: inline-block; /* Elementos en línea en modo responsivo */
+        margin: 0 10px; /* Espacio horizontal entre elementos */
+    }
+    main iframe{
+        width: 90%; /* Ancho del 90% del contenedor principal */
+    max-height: 40vh; /* Altura máxima del 80% de la altura de la ventana */
+    margin: 0 auto; /* Centra horizontalmente el iframe */
+    }    
+}

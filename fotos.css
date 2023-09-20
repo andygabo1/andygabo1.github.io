@@ -1,0 +1,108 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/backg.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 183, 255);
+}
+nav {
+    background-color:transparent; 
+    padding: 1px;
+    display: none; /* Por defecto, el menú está oculto */
+    margin: 0%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(170, 0, 0, 0.788); /* Rojo vino al pasar el cursor */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mostrar el menú de navegación al pasar el cursor sobre el encabezado */
+header:hover nav {
+    display: block;
+}
+
+.imagen-container {
+    text-align: center; /* Centrar las imágenes horizontalmente en el contenedor */
+    margin-bottom: 20px; /* Margen inferior para separar el contenedor de imágenes */
+    display: flex; /* Utilizar un contenedor flexible */
+    justify-content: center; /* Centrar las imágenes horizontalmente dentro del contenedor */
+}
+
+/* Estilo para las imágenes */
+.imagen-container img {
+    max-width: 75%; /* Ajustar el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Para mantener la relación de aspecto */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.2s ease-in-out; /* Efecto de transformación al pasar el cursor */
+    margin-right: 10px; /* Espacio entre imágenes en el diseño no responsivo */
+}
+
+/* Efecto de escala al pasar el cursor */
+.imagen-container img:hover {
+   transform: scale(1.1); /* Escalar la imagen al 110% del tamaño original */
+}
+
+@media (max-width: 768px) {
+    /* Menú de navegación en modo responsivo */
+    nav {
+        background-color: transparent; /* Fondo semi-transparente en modo responsivo */
+        display: block;
+        position: static; /* Vuelve a la posición normal */
+    }
+
+    nav ul li {
+        display: inline-block; /* Elementos en línea en modo responsivo */
+        margin: 0 10px; /* Espacio horizontal entre elementos */
+    }
+    .imagen-container{
+        margin-bottom: 10px;
+    }
+    .imagen-container img {
+        max-width: 100%; /* Ancho completo del contenedor */
+        width: auto;
+        height: auto; /* Para mantener la relación de aspecto */
+        margin: 10px 0; /* Margen superior e inferior para separación vertical */
+        display: block; /* Mostrar las imágenes una encima de la otra */
+    }
+}

@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    background-image: url('/img/back.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 183, 255);
+}
+nav {
+    background-color:transparent; 
+    padding: 1px;
+    display: none; /* Por defecto, el menú está oculto */
+    margin: 0%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(170, 0, 0, 0.788); /* Rojo vino al pasar el cursor */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mostrar el menú de navegación al pasar el cursor sobre el encabezado */
+header:hover nav {
+    display: block;
+}
+.contenedor-texto {
+    width: 100%;
+    background: none; /* Sin fondo */
+    border-radius: 25px; /* Bordes ovalados */
+    padding: 2px;
+    font-family: "Georgia", serif; /* Cambia "Nombre de la fuente" por la fuente que desees */
+    
+    /* Propiedades de borde */
+    border: 2px solid rgba(255, 255, 255, 0.733); /* Borde de 2px de ancho y color blanco */
+    box-sizing: border-box; /* Incluye el borde en el ancho y alto del div */
+    margin-bottom: 5px;
+}
+
+.contenedor-texto p {
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Menú de navegación en modo responsivo */
+    nav {
+        background-color: transparent; /* Fondo semi-transparente en modo responsivo */
+        display: block;
+        position: static; /* Vuelve a la posición normal */
+    }
+
+    nav ul li {
+        display: inline-block; /* Elementos en línea en modo responsivo */
+        margin: 0 10px; /* Espacio horizontal entre elementos */
+    }
+    .contenedor-texto{
+        font-size: 14px;
+    }
+
+}
