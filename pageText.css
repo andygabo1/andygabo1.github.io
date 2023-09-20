@@ -58,6 +58,7 @@ header:hover nav {
     display: block;
 }
 .contenedor-texto {
+    color:white;
     width: 100%;
     background: none; /* Sin fondo */
     border-radius: 25px; /* Bordes ovalados */
