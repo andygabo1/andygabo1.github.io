@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    background-image: url('/img/back.jpg');
+    background-image: url('/back.jpg');
     background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
     background-position: center center; /* Centra la imagen horizontal y verticalmente */
     background-attachment: fixed; /* Opcional: fija la imagen de fondo */
