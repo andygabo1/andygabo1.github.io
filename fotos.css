@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/img/backg.jpg');
+    background-image: url('/backg.jpg');
     background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
     background-position: center center; /* Centra la imagen horizontal y verticalmente */
     background-attachment: fixed; /* Opcional: fija la imagen de fondo */
