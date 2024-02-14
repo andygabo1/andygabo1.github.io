@@ -1,6 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: Purple ;
     background-image: url('aww.jpg');
     background-size: cover; /* Ajusta la imagen para que cubra completamente el fondo */
     background-position: center center; /* Centra la imagen horizontal y verticalmente */
